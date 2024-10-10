@@ -48,6 +48,6 @@ int main() {
     if(flag)
         cout << count;
     else
-        cout << -1
+        cout << -1;
     return 0;
 }
