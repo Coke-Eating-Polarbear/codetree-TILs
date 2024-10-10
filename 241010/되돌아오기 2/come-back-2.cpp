@@ -14,6 +14,7 @@ int main() {
     int x=0,y=0;
     int nx,ny;
     int count = 0;
+    bool flag = false;
     for(int i = 0; i < len;i++)
     {
         if(input[i] == 'F')
@@ -39,8 +40,14 @@ int main() {
         
         x = nx, y = ny;
         if(x==0 && y==0)
-            break;
+            {
+                flag = true;
+                break;
+            }
     }
-    cout << count;
+    if(flag)
+        cout << count;
+    else
+        cout << -1
     return 0;
 }
