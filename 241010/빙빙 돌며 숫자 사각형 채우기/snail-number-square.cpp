@@ -14,7 +14,7 @@ int main() {
 
     cin >> n >> m;
     int index =0;
-    vector<vector<int>> arr(n, vector<int>(n,0));
+    vector<vector<int>> arr(n, vector<int>(m,0));
     int x=0,y=0;
     int nx,ny;
 
