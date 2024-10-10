@@ -31,9 +31,9 @@ int main() {
     for(int i = 0 ;i<t;i++)
     {
         int dr, dc;
-        dr = r+dx[index];
-        dc = c+dy[index];
-        if(dr<1 || dr>n || dc < 1 || dc>n)
+        dr = r+dy[index];
+        dc = c+dx[index];
+        if(dr<1 || dr>n+1 || dc < 1 || dc>n+1)
         {
             if(d=='U')
             {
@@ -54,8 +54,9 @@ int main() {
             continue;
         }
         r = dr;
-        c= dc;
+        c=  dc;
+        
     }
-    cout << c-1 <<" " << r-1 ;
+    cout << r <<" " << c ;
     return 0;
 }
