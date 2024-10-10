@@ -6,7 +6,7 @@ using namespace std;
 int dx[4] = {0, 1, 0, -1}, dy[4] = {1, 0, -1, 0};
 int n,m;
 bool InRange(int x, int y) {
-    return (0 <= x && x < n && 0 <= y && y < n);
+    return (0 <= x && x < n && 0 <= y && y < m);
 }
 
 int main() {
