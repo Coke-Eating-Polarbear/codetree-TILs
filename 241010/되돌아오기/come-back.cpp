@@ -12,6 +12,7 @@ int main() {
     int index = 0;
     int count = 0;
     bool flag = false;
+    
     for(int i=0;i<n;i++)
     {
         char a;
@@ -40,6 +41,9 @@ int main() {
         if(flag)
             break;
     }
-    cout << count;
+    if(!flag)
+        cout << -1;
+    else
+        cout << count;
     return 0;
 }
